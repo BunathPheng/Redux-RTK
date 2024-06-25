@@ -9,6 +9,9 @@ import Layout from "./layout/Layout.jsx";
 import Product from "./page/product/Product.jsx";
 import AboutUS from "./page/about-us/AboutUS.jsx";
 import Services from "./page/services/Services.jsx";
+import CountCompoment from "./page/count/CountCompoment.jsx";
+import NotFoundPage from "./page/errorpage/NotFoundPage.jsx";
+import ProductDetail from "./page/product-detail/ProductDetail.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/count",
+        element: <CountCompoment />,
+      },
+      {
+        path: "/product/:id",
+        element: <ProductDetail />,
       },
     ],
   },

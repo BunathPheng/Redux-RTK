@@ -21,4 +21,4 @@ export const conterSlice = createSlice({
 //export actions in reducers 
 export const {increment,decrement,incrementByAmount} = conterSlice.actions;
 export default conterSlice.reducer;
- 
+  
